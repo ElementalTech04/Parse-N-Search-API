@@ -6,9 +6,10 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 @Data
-public class ParseAndSearchRequest {
+public class ParseAndSearchResponse {
+
     private List<String> searchInputs;
-    private String outputMethod;
-    private MultipartFile fileToSearch;
-    private boolean isCaseSensitiveSearch;
+    private boolean isFileOutput;
+    private MultipartFile fileOutput;
+    private List<String> stringOutput;
 }
